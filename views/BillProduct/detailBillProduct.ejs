@@ -6,7 +6,9 @@
             <div class="form-group row m-3" style="align-items: center;">
                 <label form="bold" class="col-sm-2 col-form-label">Tên khách hàng</label>
                 <label type="text" class="form-control ms-3" style="width: 200px;">
+                    <% if (objBP.idUser != undefined) {  %>
                     <%= objBP.idUser.fullName %>
+                    <% } %>
                 </label>
             </div>
 

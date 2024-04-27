@@ -62,7 +62,7 @@
                             <%= moment(row.createdAt).format('DD/MM/YYYY hh:mm:ss a') %>
                         </td>
                         <td>
-                            <% if(typeof(row.idUser.fullName)!='undefined' ){%>
+                            <% if(row.idUser != undefined ){%>
                                 <%= row.idUser.fullName %>
                                     <%} else { %>
                                         <p>Không có</p>

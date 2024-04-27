@@ -41,7 +41,10 @@
             <td>
               <div class="box" style="line-height: 8px;margin: 5px;">
                 <p>
-                  <%= row.idUser.fullName %>
+                  <% if (row.idUser != undefined) {  %>
+                    <%= row.idUser.fullName %>
+                    <% } %>
+                  
                 </p>
                 <span style="color: #aaa8a8;">Liên hệ</span>
               </div>
